@@ -1,14 +1,19 @@
 from functools import reduce
 
-def CheckEven(no):
-    return (no % 2 == 0)
+# def CheckEven(no):
+#    return (no % 2 == 0)
 
-def Increment(no):
-    return no + 2
+CheckEven = lambda no : (no % 2 == 0)
 
+# def Increment(no):
+#    return no + 2
 
-def Addition(a,b):
-    return a + b
+Increment = lambda no : no + 2
+
+#def Addition(a,b):
+#    return a + b
+
+Addition = lambda a,b : a+b
 
 def main():
     data = [5,7,6,8,4]
