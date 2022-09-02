@@ -1,15 +1,15 @@
-def outer():           # 0X100
-    print("Inside outer function")
+def outer():    # 0X100
+    print("Inside Outer function")
 
-    def inner():       # 0X200
-       print("Inside inner function")
+    def Inner():    # 0X200
+        print("Inside Inner function")
 
-    return inner        #0X200
-    
+    return  Inner   # return  0X200
+
 def main():
-    func_name = outer()    # ITS CALL TO OUTER FUNCTION
-    func_name()           # ITS CALL TO INNER FUNCTION
-
+    func_name = outer() # Its call to the outer function
+    func_name()     # Its call to the inner function
+    # Inner()
 
 if __name__ == "__main__":
     main()
